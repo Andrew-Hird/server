@@ -1,7 +1,7 @@
 module.exports = {
-  home: home
+  webapps: webapps
 }
 
-function home (req, res) {
-  res.sendFile(__dirname + '/index.html')
+function webapps (req,res) {
+  res.send(req.query.name + ' is building web apps')
 }
