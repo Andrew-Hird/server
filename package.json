@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "tape *-tests.js"
+    "test": "tape *-tests.js",
+    "debug" : "node-debug server.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
     "express": "^4.14.0"
   },
   "devDependencies": {
+    "node-inspector": "^0.12.8",
     "tape": "^4.6.0"
   }
 }
